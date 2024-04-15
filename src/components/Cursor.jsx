@@ -82,7 +82,7 @@ const Cursor = () => {
   }, []);
 
   return (
-    <div className="fixed top-0 left-0 z-50 pointer-events-none hover:#fecaca">
+    <div className="fixed top-0 left-0 z-50 pointer-events-none ">
       <div className="circle h-10 w-10 border border-white rounded-full bg-gradient-to-br to-gray-700 shadow-lg "></div>
     </div>
   );
