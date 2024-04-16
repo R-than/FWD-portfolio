@@ -22,9 +22,17 @@ html, body {
   position: fixed;
   width: 8px;
   height: 8px;
-  background-color: orange;
+  background-color: rgb(255, 166, 0);
   border-radius: 50%;
   pointer-events: none;
   z-index: 9999;
 }
 
+.circle {
+  /* Your existing styles */
+  box-shadow: 0 0 30px rgba(232, 179, 5, 0.995); /* Adjust the values as needed */
+}
+
+.skill-box:hover {
+  box-Shadow: 0px 0px 10px 5px orange;
+}

@@ -12,7 +12,7 @@ const Cursor = () => {
     // Create objects to track mouse position and custom cursor position
     const mouse = { x: 0, y: 0 }; // Track current mouse position
     const previousMouse = { x: 0, y: 0 }; // Store the previous mouse position
-    const circle = { x: -50, y: -50 }; // Track the circle position
+    const circle = { x: 0, y: 0 }; // Track the circle position
 
     // Initialize variables to track scaling and rotation
     let currentScale = 0; // Track current scale value
@@ -89,19 +89,7 @@ const Cursor = () => {
 
   return (
     <>
-      <style>{`
-       
-        .cursor-dot {
-          position: fixed;
-          width: 8px;
-          height: 8px;
-          background-color: orange;
-          border-radius: 50%;
-          pointer-events: none;
-          z-index: 9999;
-        }
-      `}</style>
-      <div className="cursor-dot"></div>
+      <div className="cursor-dot mix-blend-difference"></div>
       <div className="fixed top-0 left-0 z-50 pointer-events-none mix-blend-difference ">
         <div className="circle h-8 w-8 border-2 border-yellow rounded-full bg-gradient-to-br to-orange-300 shadow-lg ring-2 ring-yellow-500 animate-pulse mix-blend-difference "></div>
       </div>
