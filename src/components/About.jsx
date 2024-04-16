@@ -23,6 +23,8 @@ const About = () => {
             <SkillBox icon="fab fa-react" name="React.js" color="text-blue-500" />
             <SkillBox icon="fas fa-network-wired" name="FTP" color="text-gray-700" />
             <SkillBox icon="fab fa-gulp" name="Gulp" color="text-red-700" />
+            <SkillBox icon="fab fa-wordpress" name="Wordpress" color="text-red-700" />
+            <SkillBox icon="fab fa-shopify" name="Shopify" color="text-green-500" />
           </div>
         </div>
         <div className="w-1/2">

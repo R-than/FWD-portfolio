@@ -14,8 +14,7 @@ import Cursor from './components/Cursor';
 
 function App() {
   return (
-    <div className="App bg-black">
-      
+    <div className="App bg-black">      
       <Navigation />
       <Home />
       <Work />
