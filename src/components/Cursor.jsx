@@ -6,6 +6,8 @@ const Cursor = () => {
 
     // Select the circle element
     const circleElement = document.querySelector('.circle');
+    // Select the dot cursor element
+    const dotCursor = document.querySelector('.cursor-dot');
 
     // Create objects to track mouse position and custom cursor position
     const mouse = { x: 0, y: 0 }; // Track current mouse position
@@ -20,6 +22,10 @@ const Cursor = () => {
     const handleMouseMove = (e) => {
       mouse.x = e.clientX;
       mouse.y = e.clientY;
+
+      // Move the dot cursor to the current mouse position
+      dotCursor.style.left = `${mouse.x}px`;
+      dotCursor.style.top = `${mouse.y}px`;
     };
     window.addEventListener('mousemove', handleMouseMove);
 
@@ -31,8 +37,8 @@ const Cursor = () => {
         
       // MOVE
       // Calculate circle movement based on mouse position and smoothing
-      const offsetX = -20; // Adjust this value to change the horizontal offset
-      const offsetY = -20; // Adjust this value to change the vertical offset
+      const offsetX = -12; // Adjust this value to change the horizontal offset
+      const offsetY = -12; // Adjust this value to change the vertical offset
 
       circle.x += (mouse.x - circle.x + offsetX) * speed;
       circle.y += (mouse.y - circle.y + offsetY) * speed;
@@ -82,13 +88,32 @@ const Cursor = () => {
   }, []);
 
   return (
-    <div className="fixed top-0 left-0 z-50 pointer-events-none ">
-      <div className="circle h-10 w-10 border border-white rounded-full bg-gradient-to-br to-gray-700 shadow-lg "></div>
-    </div>
+    <>
+      <style>{`
+       
+        .cursor-dot {
+          position: fixed;
+          width: 8px;
+          height: 8px;
+          background-color: orange;
+          border-radius: 50%;
+          pointer-events: none;
+          z-index: 9999;
+        }
+      `}</style>
+      <div className="cursor-dot"></div>
+      <div className="fixed top-0 left-0 z-50 pointer-events-none mix-blend-difference ">
+        <div className="circle h-8 w-8 border-2 border-yellow rounded-full bg-gradient-to-br to-orange-300 shadow-lg ring-2 ring-yellow-500 animate-pulse mix-blend-difference "></div>
+      </div>
+    </>
   );
 };
 
 export default Cursor;
+
+
+
+
 
 
 

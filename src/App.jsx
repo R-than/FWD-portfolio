@@ -8,10 +8,13 @@ import Contact from './components/Contact';
 import Footer from './components/Footer';
 import Cursor from './components/Cursor';
 
+
+
+
+
 function App() {
   return (
-    <div className="App bg-black
-    ">
+    <div className="App bg-black">
       
       <Navigation />
       <Home />
