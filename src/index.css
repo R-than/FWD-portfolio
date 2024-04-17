@@ -34,5 +34,46 @@ html, body {
 }
 
 
+/*Blob Animation */
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes orbit {
+    from {
+        transform: rotate(0deg) translate(150px) rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg) translate(150px) rotate(-360deg);
+    }
+}
+
+@keyframes orbit-reverse {
+    from {
+        transform: rotate(0deg) translate(150px) rotate(0deg);
+    }
+    to {
+        transform: rotate(-360deg) translate(150px) rotate(360deg);
+    }
+}
+
+.animate-spin {
+    animation: spin 20s infinite linear;
+}
+
+.animate-orbit {
+    animation: orbit 10s infinite linear;
+}
+
+.animate-orbit-reverse {
+    animation: orbit-reverse 10s infinite linear;
+}
+
+
 
 

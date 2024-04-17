@@ -9,9 +9,6 @@ import Footer from './components/Footer';
 import Cursor from './components/Cursor';
 
 
-
-
-
 function App() {
   return (
     <div className="App bg-black">      
