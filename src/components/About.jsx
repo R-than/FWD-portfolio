@@ -36,18 +36,21 @@ const About = () => {
 }
 
 const SkillBox = ({ icon, name, color }) => {
-  return (
-    <div className="skill-box bg-white p-2 rounded-lg shadow-md flex flex-col items-center justify-center hover:scale-105 hover:shadow-lg transition-transform duration-300">
-      <div className={`relative ${color}`} style={{ transition: 'box-shadow 0.3s' }}>
+ return (
+    <div className="skill-box bg-white p-2 rounded-lg shadow-md flex flex-col items-center justify-center hover:scale-110 hover:shadow-xl transition-transform duration-300 transition-shadow duration-300">
+      <div className={`relative ${color}`} style={{ transition: 'box-shadow 0.3s, background-color 0.3s' }}>
         <i className={`${icon} text-2xl mb-1`}></i>
         <span className="text-base font-semibold">{name}</span>
         <div className="absolute inset-0 rounded-lg -z-1 bg-opacity-25 opacity-0 transition-opacity duration-300 hover:opacity-100"></div>
       </div>
+      <style jsx>{`
+        .skill-box:hover {
+          box-shadow: 0 0 25px #ffea75; /* Yellow glow */
+        }
+      `}</style>
     </div>
-  );
+ );
 }
-
-
 
 export default About;
 

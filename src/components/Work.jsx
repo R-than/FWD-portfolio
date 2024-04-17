@@ -30,13 +30,13 @@ const Work = () => {
         <h2 className="text-3xl font-bold text-center mb-4">Work</h2>
         <div className="flex flex-col items-center">
           {/* Project 1 */}
-          <div className="flex items-center mb-6">
+          <div className="flex items-center mb-6 slide-in">
             <div className="w-1/2 mr-8">
               <img src="images/TBA.jpg" alt="Capstone" className="w-full h-full object-cover rounded-lg" />
             </div>
             <div className="w-1/2">
               <h3 className="text-xl font-semibold mb-4">Capstone</h3>
-              <p className="text-gray-700 mb-6">Description of Project 1</p>
+              <p className="text-gray-700 mb-6">Capstone Description.</p>
               <a href="#" className="text-blue-500">View Project</a>
               <div className="flex mt-2">
                 <i className="fab fa-php text-purple-500 fa-3x mr-4"></i>
@@ -49,13 +49,13 @@ const Work = () => {
             </div>
           </div>
           {/* Project 2 */}
-          <div className="flex items-center mb-6">
+          <div className="flex items-center mb-6 slide-in">
             <div className="w-1/2 mr-8">
               <img src="../images/Clippr.png" alt="Clippr" className="w-full h-full object-cover rounded-lg" />
             </div>
             <div className="w-1/2">
               <h3 className="text-xl font-semibold mb-4">Clippr</h3>
-              <p className="text-gray-700 mb-6">Description of Project 2</p>
+              <p className="text-gray-700 mb-6">Clippr Description.</p>
               <a href="#" className="text-blue-500">View Project</a>
               <div className="flex mt-2">
                 <i className="fab fa-react text-blue-500 fa-3x mr-4"></i>
@@ -67,7 +67,7 @@ const Work = () => {
             </div>
           </div>
           {/* Project 3 */}
-          <div className="flex items-center" id="tic-tac-toe-section">
+          <div className="flex items-center slide-in" id="tic-tac-toe-section">
             <div className="w-1/2 mr-8">
               {showVideo ? (
                 <video src="videos/tic-tac-toe-clip.mov" alt="Tic-Tac-Toe" className="w-full h-full object-cover rounded-lg" autoPlay muted loop />
@@ -77,10 +77,10 @@ const Work = () => {
             </div>
             <div className="w-1/2">
               <h3 className="text-xl font-semibold mb-4">Tic-Tac-Toe</h3>
-              <p className="text-gray-700 mb-6">Description of Project 3</p>
+              <p className="text-gray-700 mb-6">Tic-Tac-Toe Description.</p>
               <a href="#" className="text-blue-500">View Project</a>
               <div className="flex mt-2">
-                <i className="fab fa-js text-yellow-500 fa-3x mr-4"></i>
+                <i className="fab fa-js text-yellow-500 fa-3x mr-4 "></i>
                 <i className="fab fa-css3-alt text-blue-500 fa-3x mr-4"></i>
                 <i className="fab fa-html5 text-red-500 fa-3x mr-4"></i>
               </div>
