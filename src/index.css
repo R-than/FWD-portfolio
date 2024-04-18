@@ -6,16 +6,16 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Hide default cursor */  
+html, body {
+  cursor: none; 
+  scroll-behavior: smooth
+}
 
 /* Apply font to headers */
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Poppins', sans-serif;
   }
-
-/* Hide default cursor */  
-html, body {
-  cursor: none; 
-}
 
 /* style the dot cursor */
 .cursor-dot {

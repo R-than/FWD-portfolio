@@ -26,11 +26,13 @@ function Blob() {
              </filter>
            </defs>
            <g style={{ filter: 'url(#gooey)' }}>
-             {/* Big blob */}
+             {/* Big bob 1 */}
              <circle className="bigBlob " cx="55%" cy="60%" r="150" fill="magenta" stroke="black " />
-             {/* Small blob 1 */}
+             {/* Big bob 2 */}
+             <circle className="smallBlob2 " cx="50%" cy="75%" r="80" fill="bisque" stroke="black " />
+             {/* Small bob 1 */}
              <circle className="smallBlob1 blur-2x1" cx="40%" cy="65%" r="50" fill="cyan" stroke="black" />
-             {/* Small blob 2 */}
+             {/* Small bob 2 */}
              <circle className="smallBlob2 blur-2x1" cx="50%" cy="45%" r="40" fill="Orange" stroke="black" />
            </g>
          </svg>
