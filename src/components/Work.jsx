@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import '@fortawesome/fontawesome-free/css/all.min.css';
+import { Link } from 'react-router-dom';
 
 
 
@@ -68,7 +69,7 @@ const Work = () => {
             <div className="w-full md:w-1/2">
               <h3 className="text-xl font-semibold mb-4">Capstone</h3>
               <p className="text-gray-700 mb-6">Capstone Description.</p>
-              <a href="https://matchacafe.bcitwebdeveloper.ca/" className="text-blue-500">View Project</a>
+              <Link to="/Froth" className="text-blue-500">View Project</Link>
               <div className="flex flex-wrap mt-2">
                 <i className="fab fa-php text-purple-500 fa-3x mr-4"></i>
                 <i className="fab fa-gulp text-red-500 fa-3x mr-4"></i>
