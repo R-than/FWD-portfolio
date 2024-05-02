@@ -7,7 +7,7 @@ const Navigation = () => {
   useEffect(() => {
     const handleScroll = () => {
       const offset = window.scrollY;
-      if (offset > 1000) { // Adjust the offset value as needed
+      if (offset > 1000) { 
         setShowNewNav(true);
       } else {
         setShowNewNav(false);

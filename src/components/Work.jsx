@@ -29,17 +29,17 @@ const Work = () => {
     <section id="work" className="bg-gray-200 py-8 min-h-screen">
       <div className="container mx-auto">
         <h2 className="text-3xl font-bold text-center mb-4">Work</h2>
-        <div className="flex flex-col items-center">
+        <div className="flex flex-col items-center mx-2">
           {/* Project 1 */}
-          <div className="flex flex-col md:flex-row items-center mb-6 px-4 slide-in">
-            <div className="w-full md:w-1/2 mr-0 md:mr-8 mb-4 md:mb-0 ">
-              <img src="images/TBA.jpg" alt="Capstone" className="w-full h-full object-cover rounded-lg" />
+          <div className="flex flex-col md:flex-row items-center mb-6  slide-in">
+            <div className="w-full md:w-1/2 mr-0 md:mr-8 mb-4 md:mb-0">
+              <img src="../images/TBA.jpg" alt="Capstone" className="w-full h-full object-cover rounded-lg" />
             </div>
             <div className="w-full md:w-1/2">
               <h3 className="text-xl font-semibold mb-4">Capstone</h3>
               <p className="text-gray-700 mb-6">Capstone Description.</p>
               <a href="#" className="text-blue-500">View Project</a>
-              <div className="flex mt-2">
+              <div className="flex flex-wrap mt-2">
                 <i className="fab fa-php text-purple-500 fa-3x mr-4"></i>
                 <i className="fab fa-gulp text-red-500 fa-3x mr-4"></i>
                 <i className="fab fa-html5 text-red-500 fa-3x mr-4"></i>
@@ -50,7 +50,7 @@ const Work = () => {
             </div>
           </div>
           {/* Project 2 */}
-          <div className="flex flex-col md:flex-row items-center mb-6 px-4 slide-in">
+          <div className="flex flex-col md:flex-row items-center mb-6  slide-in">
             <div className="w-full md:w-1/2 mr-0 md:mr-8 mb-4 md:mb-0">
               <img src="../images/Clippr.png" alt="Clippr" className="w-full h-full object-cover rounded-lg" />
             </div>
@@ -68,7 +68,7 @@ const Work = () => {
             </div>
           </div>
           {/* Project 3 */}
-          <div className="flex flex-col md:flex-row items-center px-4 slide-in" id="tic-tac-toe-section">
+          <div className="flex flex-col md:flex-row items-center mb-6  slide-in" id="tic-tac-toe-section">
             <div className="w-full md:w-1/2 mr-0 md:mr-8 mb-4 md:mb-0">
               {showVideo ? (
                 <video src="videos/tic-tac-toe-clip.mov" alt="Tic-Tac-Toe" className="w-full h-full object-cover rounded-lg" autoPlay muted loop />

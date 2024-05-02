@@ -7,12 +7,15 @@ import About from './components/About';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 import Cursor from './components/Cursor';
+import HamburgerMenu from './components/Hamburger';
+
 
 
 function App() {
   return (
     <div className="App bg-black">      
-      <Navigation />
+      {/* <Navigation /> */}
+      <HamburgerMenu />
       <Home />
       <Work />
       <About />
