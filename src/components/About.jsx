@@ -4,8 +4,8 @@ import '@fortawesome/fontawesome-free/css/all.min.css';
 const About = () => {
   return (
     <section id="about" className="bg-black py-8 min-h-screen flex justify-center items-center mx-4">
-      <div className="container mx-auto max-w-6xl flex flex-col md:flex-row">
-        <div className="w-full md:w-1/2  text-white mb-8 md:flex-row-reverse mb-0">
+      <div className="container flex-wrap mx-auto max-w-6xl flex flex-col md:flex-row ">
+        <div className="w-full md:w-1/2 order-2 md:order-1 text-white mb-8 md:flex-row-reverse mb-0">
           <h2 className="text-3xl font-bold mb-4">About Me</h2>
           <p className="text-lg">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer eget urna nec libero vehicula blandit. Sed euismod, nunc nec interdum luctus, felis libero lacinia nisi, vel posuere elit tortor nec metus. Quisque auctor molestie metus, id dapibus elit lacinia sed.</p>
           <h3 className="text-2xl font-bold mt-8 mb-4">Skills</h3>
@@ -27,8 +27,8 @@ const About = () => {
             <SkillBox icon="fab fa-shopify" name="Shopify" color="text-green-500" />
           </div>
         </div>
-        <div className="w-full md:w-1/2 order-1 md:order-2">
-          <img src="your_image_url.jpg" alt="Your Name" className="rounded-full mx-auto" style={{ maxWidth: '300px' }} />
+        <div className="w-full md:w-1/2 order-1 md:order-2 justify-center items-center">
+          <img src="../images/pfp.png" alt="Your Name" className=" max-w-full m-0 my-4 p-0 " />
         </div>
       </div>
     </section>

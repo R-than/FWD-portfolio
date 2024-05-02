@@ -13,13 +13,13 @@ const Contact = () => {
           
           <ul className="flex flex-col justify-center items-center lg:flex-row ">
             <li className="my-4">
-              <a href="https://www.linkedin.com/in/rathansrivarathan" target="_blank" rel="noopener noreferrer" className="text-blue-500 hover:underline"><FaLinkedin size={100} /></a>
+              <a href="https://www.linkedin.com/in/rathansrivarathan" target="_blank" rel="noopener noreferrer" className="text-blue-500 "><FaLinkedin size={100} /></a>
             </li>
             <li className=" my-4 lg:mx-6 lg:px-0">
-              <a href="https://github.com/r-than" target="_blank" rel="noopener noreferrer" className="text-blue-500 hover:underline"><FaGithub size={100} /></a>
+              <a href="https://github.com/r-than" target="_blank" rel="noopener noreferrer" className="text-blue-500 "><FaGithub size={100} /></a>
             </li>
             <li className="lg:my-2">
-              <a href="mailto:rathan_30@outlook.com" className="text-blue-500 hover:underline"><TiMail size={125} /></a>
+              <a href="mailto:rathan_30@outlook.com" className="text-blue-500  "><TiMail size={125} /></a>
             </li>
           </ul>
           
