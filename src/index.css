@@ -9,7 +9,9 @@
 /* Hide default cursor */  
 html, body {
   cursor: none; 
-  scroll-behavior: smooth
+  scroll-behavior: smooth;
+  background-color: #141B25;
+
 }
 
 /* Apply font to headers */
@@ -164,11 +166,7 @@ h1, h2, h3, h4, h5, h6 {
 			a{
 				color: #fff;
 				font-family: 'Lato', Arial, Helvetica, sans-serif;
-				/* font-size: 27px;
-				width: 100%;
-				display: block;
-				float: left;
-				line-height: 50px; */
+				
 			}
 
             &:hover {

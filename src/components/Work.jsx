@@ -9,6 +9,7 @@ const Work = () => {
   const slideInRef = useRef(null);
 
   useEffect(() => {
+    
     const handleSlideIn = (entries, observer) => {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
@@ -63,8 +64,8 @@ const Work = () => {
         <div className="flex flex-col items-center mx-2">
           {/* Project 1 */}
           <div className="flex flex-col md:flex-row items-center mb-6  slide-in">
-            <div className="w-full md:w-1/2 mr-0 md:mr-8 mb-4 md:mb-0">
-              <img src="../images/TBA.jpg" alt="Capstone" className="w-full h-full object-cover rounded-lg" />
+            <div className="w-full  md:w-1/2 mr-0 md:mr-8 mb-4 md:mb-0">
+              <img src="public/images/TBA.jpg" alt="Froth" className="w-full h-full object-cover rounded-lg" />
             </div>
             <div className="w-full md:w-1/2">
               <h3 className="text-xl font-semibold mb-4">Capstone</h3>
@@ -74,7 +75,7 @@ const Work = () => {
                 <i className="fab fa-php text-purple-500 fa-3x mr-4"></i>
                 <i className="fab fa-gulp text-red-500 fa-3x mr-4"></i>
                 <i className="fab fa-html5 text-red-500 fa-3x mr-4"></i>
-                <i className="fab fa-git text-grey-500 fa-3x mr-4"></i>
+                <i className="fab fa-git-alt text-red-500 fa-3x mr-4"></i>
                 <i className="fab fa-github text-red-500 fa-3x mr-4"></i>
                 <i className="fab fa-wordpress text-blue-500 fa-3x mr-4"></i>
               </div>
@@ -88,12 +89,13 @@ const Work = () => {
             <div className="w-full md:w-1/2">
               <h3 className="text-xl font-semibold mb-4">Clippr</h3>
               <p className="text-gray-700 mb-6">Clippr Description.</p>
-              <a href="https://rathans.com/clippr/clippr-database/clippr/clippr/" className="text-blue-500">View Project</a>
+              <Link to="/Clippr" className="text-blue-500">View Project</Link>
+              
               <div className="flex mt-2">
                 <i className="fab fa-react text-blue-500 fa-3x mr-4"></i>
                 <i className="fab fa-sass text-pink-500 fa-3x mr-4"></i>
                 <i className="fab fa-html5 text-red-500 fa-3x mr-4"></i>
-                <i className="fab fa-git text-grey-500 fa-3x mr-4"></i>
+                <i className="fab fa-git-alt text-red-500 fa-3x mr-4"></i>
                 <i className="fab fa-github text-red-500 fa-3x mr-4"></i>
               </div>
             </div>
@@ -104,13 +106,13 @@ const Work = () => {
               {showVideo ? (
                 <video src="videos/tic-tac-toe-clip.mov" alt="Tic-Tac-Toe" className="w-full h-full object-cover rounded-lg" autoPlay muted loop />
               ) : (
-                <img src="images/tic-tac-toe.jpg" alt="Tic-Tac-Toe" className="w-full h-full object-cover rounded-lg" />
+                <img src="public/images/tic-tac-toe.jpg" alt="Tic-Tac-Toe" className="w-full h-full object-cover rounded-lg" />
               )}
             </div>
             <div className="w-full md:w-1/2">
               <h3 className="text-xl font-semibold mb-4">Tic-Tac-Toe</h3>
               <p className="text-gray-700 mb-6">Tic-Tac-Toe Description.</p>
-              <a href="https://rathans.com/tic-tac-toe-game/tictactoe.html" className="text-blue-500">View Project</a>
+              <Link to="/TicTacToe" className="text-blue-500">View Project</Link>
               <div className="flex mt-2">
                 <i className="fab fa-js text-yellow-500 fa-3x mr-4 "></i>
                 <i className="fab fa-css3-alt text-blue-500 fa-3x mr-4"></i>
@@ -120,12 +122,6 @@ const Work = () => {
           </div>
         </div>
       </div>
-      {/* More Projects */}
-      {/* <div className="container mx-auto mt-8">
-        <h3 className="text-xl font-semibold mb-4">More Projects</h3>
-        <p className="text-gray-700 mb-6">Explore more of our projects on our portfolio page.</p>
-        <a href="#" className="text-blue-500">View Portfolio</a>
-      </div> */}
     </section>
   );
 }

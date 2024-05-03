@@ -1,0 +1,40 @@
+[
+    {
+        "id": "1",
+        "name": "Froth",
+        "heroimg": "FrothLogo.png",
+        "icon":["fa-php text-purple-500","fa-gulp text-red-500","fa-html5 text-red-500","fa-git-alt text-red-500","fa-github text-red-500","fa-wordpress text-blue-500"],
+        "desc": "As this being the final project of the program. I would consider this my teams biggest undertaking. I feel the most confident using Github, gulp, and wordpress overall. The program has thought me alot and being able to put it together in this Capstone is exciting.",
+        "img1":"TBA.jpg",
+        "img2":"TBA.jpg",
+        "info":"One of the biggest hurdles I had to overcome was setting up the google maps API and honestly, seeing it up and running was quite fulfilling. ",
+        "live": "https://matchacafe.bcitwebdeveloper.ca/"
+    
+      },
+
+      {
+        "id": "2",
+        "name": "Clippr",
+        "heroimg": "Clippr.png",
+        "icon":["fa-react text-blue-500","fa-sass text-pink-500","fa-html5 text-red-500","fa-git-alt text-red-500","fa-github text-red-500"],
+        "desc": "This was my first React project and it shows, it was not the most polished, I wouldnt even consider it finished, but it was something, even in its unfinsihed state, something I can be proud of. The fact that I made something with react, but with an API on top of that. I will go back to it once this program is complete to finish it. But for now, its not so bad.",
+        "img1":"Clipprmobiledetail.png",
+        "img2":"ClipprFav.png",
+        "info":"Something I am quite proud of is the functioning Favourite page. For the undertaking this project was. I struggled with this part of the site for countless nights and the end result is by no means perfect, but satisfactory.",
+        "live": "https://rathans.com/clippr/clippr-database/clippr/clippr/"
+    
+      },
+
+      {
+        "id": "3",
+        "name": "TicTacToe",
+        "heroimg": "tic-tac-toe.jpg",
+        "icon":["fa-js text-yellow-500","fa-css3-alt text-blue-500","fa-html5 text-red-500"],
+        "desc": "This was my first Javascript project. Something I am a fan of is games and being able to make a game for the first time has been a big goal of mine. And I'd like to think I did quite a good job on something I consider my first big project.",
+        "img1":"tictactoemode.png",
+        "img2":"pick.png",
+        "info":"Something I am quite proud of is the functioning Favourite page. For the undertaking this project was. I struggled with this part of the site for countless nights and the end result is by no means perfect, but satisfactory.",
+        "live": "https://rathans.com/tic-tac-toe-game/tictactoe.html"
+    
+      }
+]

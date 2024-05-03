@@ -16,7 +16,7 @@ const About = () => {
             <SkillBox icon="fab fa-php"  color="text-purple-500" /> {/* name="PHP" */}
             <SkillBox icon="fas fa-liquid" name="Liquid" color="text-blue-500" />
             <SkillBox icon="fab fa-sass" name="Sass" color="text-pink-500" />
-            <SkillBox icon="fab fa-git"  color="text-gray-500" /> {/* name="Git" */}
+            <SkillBox icon="fab fa-git-alt" name="Git" color="text-red-500" /> 
             <SkillBox icon="fab fa-github" name="GitHub" color="text-red-400" />
             <SkillBox icon="fas fa-database" name="MySQL" color="text-indigo-500" />
             <SkillBox icon="fab fa-tailwind" name="Tailwind CSS" color="text-blue-300" />
