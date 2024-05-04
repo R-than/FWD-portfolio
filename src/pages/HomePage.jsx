@@ -13,7 +13,7 @@ import HamburgerMenu from '../components/Hamburger';
 
 function HomePage() {
   return (
-    <div className="App bg-black">      
+    <div className="App">      
       {/* <Navigation /> */}
       <HamburgerMenu />
       <Home />

@@ -3,7 +3,7 @@ import '@fortawesome/fontawesome-free/css/all.min.css';
 
 const About = () => {
   return (
-    <section id="about" className="bg-black py-8 min-h-screen flex justify-center items-center mx-4">
+    <section id="about" className="py-8 min-h-screen flex justify-center items-center mx-4">
       <div className="container flex-wrap mx-auto max-w-6xl flex flex-col md:flex-row ">
         <div className="w-full md:w-1/2 order-2 md:order-1 text-white mb-8 md:flex-row-reverse mb-0">
           <h2 className="text-3xl font-bold mb-4">About Me</h2>

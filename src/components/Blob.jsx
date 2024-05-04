@@ -31,7 +31,7 @@ function Blob() {
            </defs>
            <g style={{ filter: 'url(#gooey)' }}>
              {/* Big blob 1 Puprle*/}
-             <circle className="bigBlob " cx="55%" cy="50%" r="150" fill="magenta" stroke="black " />
+             <circle className="bigBlob  " cx="55%" cy="50%" r="150" fill="magenta" stroke="black " />
              {/* Big blob 1 Yellow*/}
              <circle className="smallBlob1 " cx="60%" cy="65%" r="50" fill="#FFFF00" stroke="black " />
              {/* Big blob 2 Green*/}
