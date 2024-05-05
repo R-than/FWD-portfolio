@@ -66,8 +66,8 @@ const Work = () => {
               <img src="/images/TBA.jpg" alt="Froth" className="w-full h-full object-cover rounded-lg" />
             </div>
             <div className="w-full md:w-1/2">
-              <h3 className="text-xl font-semibold mb-4">Froth</h3>
-              <p className="text-white mb-6">Capstone Description.</p>
+              <h3 className="text-xl md:text-5xl font-semibold mb-4">Froth</h3>
+              <p className="text-white mb-6">This is the Capstone wordpress project based on a Matcha cafe. It is currently in development.</p>
               <Link to="/Froth" className="flex justify-center md:justify-start text-base md:text-2xl text-orange-300 py-2">View Project</Link>
               <div className="flex flex-wrap mt-2">
                 <i className="fab fa-php text-purple-500 fa-3x mr-4"></i>
@@ -95,8 +95,8 @@ const Work = () => {
               <img src="../images/Clippr.png" alt="Clippr" className="w-full h-full object-cover rounded-lg" />
             </div>
             <div className="w-full md:w-1/2">
-              <h3 className="text-xl font-semibold mb-4">Clippr</h3>
-              <p className="text-white mb-6">Clippr Description.</p>
+              <h3 className="text-xl md:text-5xl font-semibold mb-4">Clippr</h3>
+              <p className="text-white mb-6">This is a movie database. Developed using React with the help of an API.</p>
               <Link to="/Clippr" className="flex justify-center md:justify-start text-base md:text-2xl text-orange-300 py-2">View Project</Link>
               
               <div className="flex mt-2">
@@ -127,8 +127,8 @@ const Work = () => {
               )}
             </div>
             <div className="w-full md:w-1/2">
-              <h3 className="text-xl font-semibold mb-4">Tic-Tac-Toe</h3>
-              <p className="text-white mb-6">Tic-Tac-Toe Description.</p>
+              <h3 className="text-xl md:text-5xl font-semibold mb-4">Tic-Tac-Toe</h3>
+              <p className="text-white mb-6">This is my first Javascript game I developed.</p>
               <Link to="/TicTacToe" className="flex justify-center md:justify-start text-base md:text-2xl text-orange-300 py-2">View Project</Link>
               <div className="flex mt-2">
                 <i className="fab fa-js text-yellow-500 fa-3x mr-4 "></i>

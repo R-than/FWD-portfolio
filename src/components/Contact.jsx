@@ -1,7 +1,7 @@
 import React from 'react';
 import { FaLinkedin, FaGithub } from 'react-icons/fa';
 import { TiMail } from 'react-icons/ti';
-import { motion } from 'framer-motion';
+import { motion, transform } from 'framer-motion';
 
 
 
@@ -10,13 +10,16 @@ const Contact = () => {
     const FadeInAnimation = {
     initial: {
       opacity: 0,
-      y: 50,
+      y: 150,
       filter: "blur(10px)",
     },
     animate: {
       opacity: 1,
       y: 0,
       filter: "blur(0px)",
+      transition: {
+        duration: 1, 
+      }
       
     },
   }
@@ -31,15 +34,32 @@ const Contact = () => {
           
           <ul className="flex flex-col justify-center items-center lg:flex-row ">
             <motion.li className="my-4"
-            >
-              <a href="https://www.linkedin.com/in/rathansrivarathan" target="_blank" rel="noopener noreferrer" className="text-white "><FaLinkedin size={100} /></a>
+            variants={FadeInAnimation}
+            initial="initial"
+            whileInView="animate"            
+            viewport={{
+             once: true,
+            }}>
+              <a href="https://www.linkedin.com/in/rathansrivarathan" target="_blank" rel="noopener noreferrer" className="text-white hover:text-orange-400"><FaLinkedin size={100} /></a>
             </motion.li>
-            <li className=" my-4 lg:mx-6 lg:px-0">
-              <a href="https://github.com/r-than" target="_blank" rel="noopener noreferrer" className="text-white "><FaGithub size={100} /></a>
-            </li>
-            <li className="lg:my-2">
-              <a href="mailto:rathan_30@outlook.com" className="text-white  "><TiMail size={125} /></a>
-            </li>
+            <motion.li className=" my-4 lg:mx-6 lg:px-0"
+            variants={FadeInAnimation}
+            initial="initial"
+            whileInView="animate"            
+            viewport={{
+             once: true,
+            }}>
+              <a href="https://github.com/r-than" target="_blank" rel="noopener noreferrer" className="text-white hover:text-orange-400"><FaGithub size={100} /></a>
+            </motion.li>
+            <motion.li className="lg:my-2"
+            variants={FadeInAnimation}
+            initial="initial"
+            whileInView="animate"            
+            viewport={{
+             once: true,
+            }}>
+              <a href="mailto:rathan_30@outlook.com" className="text-white hover:text-orange-400 "><TiMail size={125} /></a>
+            </motion.li>
           </ul>
           
           <p className="mt-10"></p>

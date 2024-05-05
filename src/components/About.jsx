@@ -41,7 +41,10 @@ const About = () => {
       <div className="container flex-wrap mx-auto max-w-6xl flex flex-col md:flex-row ">
         <div className="w-full md:w-1/2 order-2 md:order-1 text-white mb-8 md:flex-row-reverse mb-0">
           <h2 className="text-3xl font-bold mb-4">About Me</h2>
-          <p className="text-lg">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer eget urna nec libero vehicula blandit. Sed euismod, nunc nec interdum luctus, felis libero lacinia nisi, vel posuere elit tortor nec metus. Quisque auctor molestie metus, id dapibus elit lacinia sed.</p>
+          <p className="text-lg">
+          Welcome to my digital haven! I poured my heart into this project, and it's only going to get better. I'm all about creativity and adding my artistic touch. Front-end coding is where I found my groove - mixing tech with creativity is something I am passionate about and looking forward to doing more. Outside of that, I'm into photography and just started dabbling in making videography. Stick around, there's a lot of cool stuff coming.<br/>
+          <a className=' flex justify-center font-bold text-orange-400 hover:text-orange-200' href="https://rathan30.myportfolio.com/">Check out my Photos</a>
+          </p>
           <h3 className="text-2xl font-bold mt-8 mb-4">Skills</h3>
           <motion.div className="grid grid-cols-3 gap-4"
             variants={FadeInAnimation}
