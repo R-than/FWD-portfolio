@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 
-
 const HamburgerMenu = () => {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -39,9 +38,4 @@ const HamburgerMenu = () => {
 };
 
 
-
 export default HamburgerMenu;
-
-
-
-

@@ -3,7 +3,6 @@ import '@fortawesome/fontawesome-free/css/all.min.css';
 import '../index.css';
 
 
-
 const Detail = ({project}) => {
 
     useEffect(() => {
@@ -24,15 +23,17 @@ const Detail = ({project}) => {
                 })}
               </div>
 
-            <p className="text-base md:text-lg text-white mb-6 py-3" >{project.desc}</p>
+            <p className="text-base md:text-lg lg:w-1/3 text-white mb-6 py-3" >{project.desc}</p>
             <div className='flex flex-col w-full items-center justify-center md:flex-row md:w-164'>
-                <img className="mb-6 lg:w-1/2 px-2 " src={`/images/${project.img1}`} alt="Clippr Detail page" />
+                <img className="mb-6 lg:w-1/3 px-2 " src={`/images/${project.img1}`} alt="Clippr Detail page" />
 
-                <img className="mb-6 lg:w-1/2 px-2" src={`/images/${project.img2}`} alt="Clippr Favourite page" />
+                <img className="mb-6 lg:w-1/3 px-2" src={`/images/${project.img2}`} alt="Clippr Favourite page" />
             </div>
 
-            <p className="text-base md:text-lg text-white mb-6 py-3" >{project.info}</p>
-            <button><a className='text-yellow-400 font-bold text-5xl hover:scale-110' href={project.live}>Go to {project.name}</a></button>
+            <p className="text-base md:text-lg lg:w-1/3 text-white mb-6 py-3" >{project.info}</p>
+            <button className="bg-yellow-600 hover:bg-yellow-500 text-white font-bold py-2 px-4 rounded-lg shadow-md hover:scale-110">
+                <a className='text-xl md:text-2xl lg:text-3xl ' href={project.live}>Go to {project.name}</a>
+            </button>
             
         </div>
     );

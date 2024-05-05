@@ -4,8 +4,6 @@ import { TiMail } from 'react-icons/ti';
 import { motion } from 'framer-motion';
 
 
-
-
 const Contact = () => {
     const FadeInAnimation = {
     initial: {
@@ -33,7 +31,7 @@ const Contact = () => {
           <p className="mt-20 text-white mb-20 text-3xl">Let's connect</p>
           
           <ul className="flex flex-col justify-center items-center lg:flex-row ">
-            <motion.li className="my-4"
+            <motion.li className="my-4 lg:mx-6 lg:px-0"
             variants={FadeInAnimation}
             initial="initial"
             whileInView="animate"            
@@ -51,7 +49,7 @@ const Contact = () => {
             }}>
               <a href="https://github.com/r-than" target="_blank" rel="noopener noreferrer" className="text-white hover:text-orange-400" alt="GitHub Logo"><FaGithub size={100} /></a>
             </motion.li>
-            <motion.li className="lg:my-2"
+            <motion.li className="my-2 lg:mx-4 lg:px-0"
             variants={FadeInAnimation}
             initial="initial"
             whileInView="animate"            
@@ -71,7 +69,3 @@ const Contact = () => {
 }
 
 export default Contact;
-
-
-
-

@@ -19,6 +19,14 @@ h1, h2, h3, h4, h5, h6 {
     font-family: 'Poppins', sans-serif;
   }
 
+/* Outline for the Home Header */
+.outline-text {
+	-webkit-text-stroke-width: .2px;
+	-webkit-text-stroke-color: #141B25;
+}
+
+
+/* Cursor -------------------------------------------------------------------------------------------------*/
 /* style the dot cursor */
 .cursor-dot {
   position: fixed;
@@ -30,17 +38,13 @@ h1, h2, h3, h4, h5, h6 {
   z-index: 9999;
 }
 
-.circle {
-  /* Your existing styles */
-  box-shadow: 0 0 30px rgba(232, 179, 5, 0.995); /* Adjust the values as needed */
+.circle { 
+  box-shadow: 0 0 30px rgba(232, 179, 5, 0.995); 
 }
 
-.outline-text {
-	-webkit-text-stroke-width: .2px;
-	-webkit-text-stroke-color: #141B25;
-}
 
-/*Blob Animation */
+
+/*Blob Animation -------------------------------------------------------------------------------------------------*/
 @keyframes spin {
     from {
         transform: rotate(0deg);
@@ -97,7 +101,7 @@ h1, h2, h3, h4, h5, h6 {
 
 
 
-/* Styling for Hamburger style */
+/* Styling for Hamburger style -------------------------------------------------------------------------------------------------*/
 
 .open{
 	position: fixed;
@@ -253,8 +257,6 @@ h1, h2, h3, h4, h5, h6 {
     }   
 }
 
-
-
 @keyframes slideIn {
 	0% {
 	  opacity: 0;
@@ -291,6 +293,3 @@ h1, h2, h3, h4, h5, h6 {
     transform: translateX(-100%);
     transition: all 1s;
 }
-
-
-

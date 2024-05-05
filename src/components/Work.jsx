@@ -4,7 +4,6 @@ import { Link } from 'react-router-dom';
 import { motion } from "framer-motion";
 
 
-
 const Work = () => {
   const [showVideo, setShowVideo] = useState(false);
 
@@ -49,6 +48,7 @@ const Work = () => {
       <div className="container mx-auto" >
         <h2 className="text-3xl md:text5x1 font-bold text-center mb-4 ">Work</h2>
         <div className="flex flex-col items-center mx-2 ">
+
           {/* Project 1 */}
           
           <motion.div 
@@ -80,6 +80,7 @@ const Work = () => {
           </motion.div>
           
           {/* Project 2 */}
+
           <motion.div
           variants={FadeInAnimation}
            initial="initial"
@@ -94,7 +95,7 @@ const Work = () => {
             </div>
             <div className="w-full md:w-1/2">
               <h3 className="text-xl md:text-5xl font-semibold mb-4">Clippr</h3>
-              <p className="text-white mb-6">This is a movie database. Developed using React with the help of an API.</p>
+              <p className="text-white mb-6">This is a movie database. Developed using React with the help of API.</p>
               <Link to="/Clippr" className="flex justify-center md:justify-start text-base md:text-2xl text-orange-300 py-2">View Project</Link>
               
               <div className="flex mt-2">
@@ -107,7 +108,9 @@ const Work = () => {
             </div>
           </div>
           </motion.div>
+
           {/* Project 3 */}
+
           <motion.div
           variants={FadeInAnimation}
            initial="initial"

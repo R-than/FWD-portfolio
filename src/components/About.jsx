@@ -99,7 +99,6 @@ const SkillBox = ({ icon, name, color, delay }) => {
 }
 
 
-
 export default About;
 
 
