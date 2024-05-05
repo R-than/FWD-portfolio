@@ -21,7 +21,7 @@ function Blob() {
     }, []);
    
     return (
-       <div className="z-0" style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%',  }}>
+       <div className="absolute inset-0 w-full h-full z-0">
          <svg ref={svgRef} className="blobCont " viewBox="0 0 1920 1000" preserveAspectRatio="xMidYMid slice">
            <defs>
              <filter id="gooey" height="130%">

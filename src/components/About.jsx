@@ -1,7 +1,41 @@
 import React from 'react';
 import '@fortawesome/fontawesome-free/css/all.min.css';
+import { motion } from "framer-motion";
 
 const About = () => {
+
+  const FadeInAnimation = {
+    initial: {
+      opacity: 0,
+      y: 400,
+      filter: "blur(10px)",
+    },
+    animate: {
+      opacity: 1,
+      y: 0,
+      filter: "blur(0px)",
+      
+    },
+  }
+
+  const skills = [
+  { icon: "fab fa-js", name: "JavaScript", color: "text-yellow-500" },
+  { icon: "fab fa-css3-alt", name: "CSS", color: "text-blue-500" },
+  { icon: "fab fa-html5", name: "HTML", color: "text-red-500" },
+  { icon: "fab fa-php", name: "PHP", color: "text-purple-500" },
+  { icon: "fas fa-liquid", name: "Liquid", color: "text-blue-500" },
+  { icon: "fab fa-sass", name: "Sass", color: "text-pink-500" },
+  { icon: "fab fa-git-alt", name: "Git", color: "text-red-500" },
+  { icon: "fab fa-github", name: "GitHub", color: "text-red-400" },
+  { icon: "fas fa-database", name: "MySQL", color: "text-indigo-500" },
+  { icon: "fab fa-tailwind", name: "Tailwind CSS", color: "text-blue-300" },
+  { icon: "fab fa-react", name: "React.js", color: "text-blue-500" },
+  { icon: "fas fa-network-wired", name: "FTP", color: "text-gray-700" },
+  { icon: "fab fa-gulp", name: "Gulp", color: "text-red-700" },
+  { icon: "fab fa-wordpress", name: "Wordpress", color: "text-blue-500" },
+  { icon: "fab fa-shopify", name: "Shopify", color: "text-green-500" },
+];
+
   return (
     <section id="about" className="py-8 min-h-screen flex justify-center items-center mx-4">
       <div className="container flex-wrap mx-auto max-w-6xl flex flex-col md:flex-row ">
@@ -9,23 +43,25 @@ const About = () => {
           <h2 className="text-3xl font-bold mb-4">About Me</h2>
           <p className="text-lg">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer eget urna nec libero vehicula blandit. Sed euismod, nunc nec interdum luctus, felis libero lacinia nisi, vel posuere elit tortor nec metus. Quisque auctor molestie metus, id dapibus elit lacinia sed.</p>
           <h3 className="text-2xl font-bold mt-8 mb-4">Skills</h3>
-          <div className="grid grid-cols-3 gap-4 ">
-            <SkillBox icon="fab fa-js" name="JavaScript" color="text-yellow-500" />
-            <SkillBox icon="fab fa-css3-alt" name="CSS" color="text-blue-500" />
-            <SkillBox icon="fab fa-html5" name="HTML" color="text-red-500" />
-            <SkillBox icon="fab fa-php"  color="text-purple-500" /> {/* name="PHP" */}
-            <SkillBox icon="fas fa-liquid" name="Liquid" color="text-blue-500" />
-            <SkillBox icon="fab fa-sass" name="Sass" color="text-pink-500" />
-            <SkillBox icon="fab fa-git-alt" name="Git" color="text-red-500" /> 
-            <SkillBox icon="fab fa-github" name="GitHub" color="text-red-400" />
-            <SkillBox icon="fas fa-database" name="MySQL" color="text-indigo-500" />
-            <SkillBox icon="fab fa-tailwind" name="Tailwind CSS" color="text-blue-300" />
-            <SkillBox icon="fab fa-react" name="React.js" color="text-blue-500" />
-            <SkillBox icon="fas fa-network-wired" name="FTP" color="text-gray-700" />
-            <SkillBox icon="fab fa-gulp" name="Gulp" color="text-red-700" />
-            <SkillBox icon="fab fa-wordpress" name="Wordpress" color="text-blue-500" />
-            <SkillBox icon="fab fa-shopify" name="Shopify" color="text-green-500" />
-          </div>
+          <motion.div className="grid grid-cols-3 gap-4"
+            variants={FadeInAnimation}
+            initial="initial"
+            animate="animate"
+            whileInView="animate"
+            viewport={{
+              once: true,
+            }}
+          >
+            {skills.map((skill, index) => (
+              <SkillBox
+                key={index}
+                icon={skill.icon}
+                name={skill.name}
+                color={skill.color}
+                delay={index * 0.3} 
+              />
+            ))}
+          </motion.div>
         </div>
         <div className="w-full md:w-1/2 order-1 md:order-2 justify-center items-center">
           <img src="../images/pfp.png" alt="Your Name" className=" max-w-full m-0 my-4 p-0 " />
@@ -35,9 +71,16 @@ const About = () => {
   );
 }
 
-const SkillBox = ({ icon, name, color }) => {
+const SkillBox = ({ icon, name, color, delay }) => {
   return (
-    <div className="skill-box bg-white p-2 rounded-lg shadow-md flex flex-col items-center justify-center hover:scale-110 hover:shadow-xl transition-transform duration-300 transition-shadow duration-300">
+    <motion.div
+      className="skill-box bg-white p-2 rounded-lg shadow-md flex flex-col items-center justify-center hover:scale-110 hover:shadow-xl transition-transform duration-300 transition-shadow duration-300"
+      initial={{ opacity: 0, y: 400, filter: "blur(10px)" }}
+      whileInView={{ opacity: 1, y: 0, filter: "blur(0px)", transition: { delay: delay, duration: 0.5, type: "spring" } }}
+      viewport={{
+        once: true,
+      }}
+    >
       <div className={`relative ${color}`} style={{ transition: 'box-shadow 0.3s, background-color 0.3s' }}>
         <i className={`${icon} text-2xl mb-1`}></i>
         <span className="text-base font-semibold">{name}</span>
@@ -48,11 +91,14 @@ const SkillBox = ({ icon, name, color }) => {
           box-shadow: 0 0 25px #ffea75; /* Yellow glow */
         }
       `}</style>
-    </div>
+    </motion.div>
   );
 }
 
+
+
 export default About;
+
 
 
 

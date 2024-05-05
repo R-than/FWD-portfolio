@@ -18,7 +18,7 @@
         "heroimg": "Clippr.png",
         "icon":["fa-react text-blue-500","fa-sass text-pink-500","fa-html5 text-red-500","fa-git-alt text-red-500","fa-github text-red-500"],
         "desc": "This was my first React project and it shows, it was not the most polished, I wouldnt even consider it finished, but it was something, even in its unfinsihed state, something I can be proud of. The fact that I made something with react, but with an API on top of that. I will go back to it once this program is complete to finish it. But for now, its not so bad.",
-        "img1":"Clipprmobiledetail.png",
+        "img1":"ClipprMain.png",
         "img2":"ClipprFav.png",
         "info":"Something I am quite proud of is the functioning Favourite page. For the undertaking this project was. I struggled with this part of the site for countless nights and the end result is by no means perfect, but satisfactory.",
         "live": "https://rathans.com/clippr/clippr-database/clippr/clippr/"
