@@ -46,7 +46,7 @@ const Work = () => {
   return (
     <section id="work" className="text-white py-8 min-h-screen ">
       <div className="container mx-auto" >
-        <h2 className="text-3xl md:text5x1 font-bold text-center mb-4 ">Work</h2>
+        <h2 className="text-3xl md:text-5xl font-bold text-center mb-4 ">Work</h2>
         <div className="flex flex-col items-center mx-2 ">
 
           {/* Project 1 */}
@@ -122,7 +122,7 @@ const Work = () => {
           <div className="flex flex-col md:flex-row items-center mb-6  " id="tic-tac-toe-section">
             <div className="w-full md:w-1/2 mr-0 md:mr-8 mb-4 md:mb-0">
               {showVideo ? (
-                <video src="videos/tic-tac-toe-clip.mov" alt="Tic-Tac-Toe video" className="w-full h-full object-cover rounded-lg" autoPlay muted loop />
+                <video src="videos/tic-tac-toe-clip.mp4" alt="Tic-Tac-Toe video" className="w-full h-full object-cover rounded-lg" autoPlay muted loop />
               ) : (
                 <img src="/images/tic-tac-toe.jpg" alt="Tic-Tac-Toe image" className="w-full h-full object-cover rounded-lg" />
               )}

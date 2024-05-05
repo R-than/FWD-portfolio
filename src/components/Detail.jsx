@@ -11,14 +11,14 @@ const Detail = ({project}) => {
 )
     return (
         <div className="flex flex-col items-center justify-center p-8 md:mx-auto z-150">
-            <h1 className="text-6x1 md:text-6xl font-bold mb-8 text-center text-yellow-400" >{project.name}</h1>
+            <h1 className="text-6xl md:text-6xl font-bold mb-8 text-center text-yellow-400" >{project.name}</h1>
             
                 <img className="mb-4 md:mb-8 lg:w-1/2 w-164 h-auto " src={`/images/${project.heroimg}`} alt="Clippr image" />
                 
             <div className="flex flex-wrap mt-2">
                 {project.icon.map((el,i)=> { 
                     return (
-                        <i key={i} className={`fab ${el} fa-3x md:fa-5x mr-4`}></i>
+                        <i key={i} className={`fab ${el} fa-3x md:fa-5x mr-4 py-1`}></i>
                     )
                 })}
               </div>
