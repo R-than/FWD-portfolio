@@ -1,4 +1,3 @@
-import { style } from 'motion';
 import React, { useState } from 'react';
 
 
@@ -39,9 +38,7 @@ const HamburgerMenu = () => {
   );
 };
 
-<style>
-    
-</style>
+
 
 export default HamburgerMenu;
 

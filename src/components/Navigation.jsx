@@ -13,10 +13,9 @@ const Navigation = () => {
         setShowNewNav(false);
       }
 
-      // Determine the active section based on scroll position
       const sections = document.querySelectorAll('section');
       sections.forEach(section => {
-        const sectionTop = section.offsetTop - 100; // Adjust as needed
+        const sectionTop = section.offsetTop - 100; 
         const sectionHeight = section.clientHeight;
         if (offset >= sectionTop && offset < sectionTop + sectionHeight) {
           setActiveSection(section.id);
@@ -67,12 +66,3 @@ const Navigation = () => {
 }
 
 export default Navigation;
-
-
-
-
-
-
-
-
-

@@ -1,7 +1,7 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState, useEffect } from 'react';
 import '@fortawesome/fontawesome-free/css/all.min.css';
 import { Link } from 'react-router-dom';
-import { animate, motion, useInView } from "framer-motion";
+import { motion } from "framer-motion";
 
 
 
@@ -11,7 +11,7 @@ const Work = () => {
   const FadeInAnimation = {
     initial: {
       opacity: 0,
-      x: 500,
+      x: -300,
       filter: "blur(10px)",
     },
     animate: {
@@ -20,11 +20,9 @@ const Work = () => {
       filter: "blur(0px)",
     },
   }
-  
-  
-  
 
-
+  
+  
   const handleScroll = () => {
     const ticTacToeSection = document.getElementById("tic-tac-toe-section");
     if (ticTacToeSection) {
@@ -47,13 +45,13 @@ const Work = () => {
   
 
   return (
-    <section id="work" className="text-white  py-8 min-h-screen">
+    <section id="work" className="text-white py-8 min-h-screen ">
       <div className="container mx-auto" >
-        <h2 className="text-3xl md:text5x1 font-bold text-center mb-4">Work</h2>
-        <div className="flex flex-col items-center mx-2">
+        <h2 className="text-3xl md:text5x1 font-bold text-center mb-4 ">Work</h2>
+        <div className="flex flex-col items-center mx-2 ">
           {/* Project 1 */}
           
-          <motion.div
+          <motion.div 
           variants={FadeInAnimation}
            initial="initial"
            whileInView="animate"
@@ -63,7 +61,7 @@ const Work = () => {
            }}>
           <div className="flex flex-col md:flex-row items-center mb-6  "  >
             <div className="w-full  md:w-1/2 mr-0 md:mr-8 mb-4 md:mb-0">
-              <img src="/images/TBA.jpg" alt="Froth" className="w-full h-full object-cover rounded-lg" />
+              <img src="/images/TBA.jpg" alt="Froth image" className="w-full h-full object-cover rounded-lg" />
             </div>
             <div className="w-full md:w-1/2">
               <h3 className="text-xl md:text-5xl font-semibold mb-4">Froth</h3>
@@ -92,7 +90,7 @@ const Work = () => {
            }}>
           <div className="flex flex-col md:flex-row items-center mb-6  ">
             <div className="w-full md:w-1/2 mr-0 md:mr-8 mb-4 md:mb-0">
-              <img src="../images/Clippr.png" alt="Clippr" className="w-full h-full object-cover rounded-lg" />
+              <img src="../images/Clippr.png" alt="Clippr image" className="w-full h-full object-cover rounded-lg" />
             </div>
             <div className="w-full md:w-1/2">
               <h3 className="text-xl md:text-5xl font-semibold mb-4">Clippr</h3>
@@ -121,9 +119,9 @@ const Work = () => {
           <div className="flex flex-col md:flex-row items-center mb-6  " id="tic-tac-toe-section">
             <div className="w-full md:w-1/2 mr-0 md:mr-8 mb-4 md:mb-0">
               {showVideo ? (
-                <video src="videos/tic-tac-toe-clip.mov" alt="Tic-Tac-Toe" className="w-full h-full object-cover rounded-lg" autoPlay muted loop />
+                <video src="videos/tic-tac-toe-clip.mov" alt="Tic-Tac-Toe video" className="w-full h-full object-cover rounded-lg" autoPlay muted loop />
               ) : (
-                <img src="/images/tic-tac-toe.jpg" alt="Tic-Tac-Toe" className="w-full h-full object-cover rounded-lg" />
+                <img src="/images/tic-tac-toe.jpg" alt="Tic-Tac-Toe image" className="w-full h-full object-cover rounded-lg" />
               )}
             </div>
             <div className="w-full md:w-1/2">
@@ -145,16 +143,3 @@ const Work = () => {
 }
 
 export default Work;
-
-
-
-
-
-
-
-
-
-
-
-
-

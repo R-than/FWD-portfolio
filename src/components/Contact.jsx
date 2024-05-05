@@ -1,7 +1,7 @@
 import React from 'react';
 import { FaLinkedin, FaGithub } from 'react-icons/fa';
 import { TiMail } from 'react-icons/ti';
-import { motion, transform } from 'framer-motion';
+import { motion } from 'framer-motion';
 
 
 
@@ -40,7 +40,7 @@ const Contact = () => {
             viewport={{
              once: true,
             }}>
-              <a href="https://www.linkedin.com/in/rathansrivarathan" target="_blank" rel="noopener noreferrer" className="text-white hover:text-orange-400"><FaLinkedin size={100} /></a>
+              <a href="https://www.linkedin.com/in/rathansrivarathan" target="_blank" rel="noopener noreferrer" className="text-white hover:text-orange-400" alt="linkedin Logo" ><FaLinkedin size={100} /></a>
             </motion.li>
             <motion.li className=" my-4 lg:mx-6 lg:px-0"
             variants={FadeInAnimation}
@@ -49,7 +49,7 @@ const Contact = () => {
             viewport={{
              once: true,
             }}>
-              <a href="https://github.com/r-than" target="_blank" rel="noopener noreferrer" className="text-white hover:text-orange-400"><FaGithub size={100} /></a>
+              <a href="https://github.com/r-than" target="_blank" rel="noopener noreferrer" className="text-white hover:text-orange-400" alt="GitHub Logo"><FaGithub size={100} /></a>
             </motion.li>
             <motion.li className="lg:my-2"
             variants={FadeInAnimation}
@@ -58,7 +58,7 @@ const Contact = () => {
             viewport={{
              once: true,
             }}>
-              <a href="mailto:rathan_30@outlook.com" className="text-white hover:text-orange-400 "><TiMail size={125} /></a>
+              <a href="mailto:rathan_30@outlook.com" className="text-white hover:text-orange-400 " alt="E-mail Logo"><TiMail size={125} /></a>
             </motion.li>
           </ul>
           

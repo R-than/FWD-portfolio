@@ -1,10 +1,8 @@
 import React from 'react';
 import '../index.css';
 import Cursor from '../components/Cursor';
-import Blob from '../components/Blob';
 import HamburgerTwo from '../components/HamburgerTwo';
 import Footer from '../components/Footer';
-
 import Contact from '../components/Contact';
 import { useParams } from 'react-router-dom';
 import projectDetail from '../data/projectDetail.json';
@@ -25,8 +23,6 @@ const DetailedPage = () => {
     <Detail project={project}/>
     <Contact />
     <Footer />
-    
-   
   </div>
   );
 }

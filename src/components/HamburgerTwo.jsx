@@ -1,4 +1,3 @@
-import { style } from 'motion';
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 
@@ -33,9 +32,6 @@ const HamburgerTwo = () => {
           <li className='block float-right clear-both h-auto'>
             <a href="#" title="work" onClick="scrollToTop()" className='text-white no-underline text-27px w-full block float-left leading-16'>Detail</a>
           </li>
-          {/* <li className='block float-right clear-both h-auto'>
-            <a href="#about" title="about" className='text-white no-underline text-27px w-full block float-left leading-14'> About</a>
-          </li> */}
           <li className='block float-right clear-both h-auto'>
             <a href="#contact" title="contact" className='text-white no-underline text-20px w-full block float-left leading-16'>Contact</a>
           </li>

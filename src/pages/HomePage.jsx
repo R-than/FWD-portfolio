@@ -1,6 +1,5 @@
 import React from 'react';
 import '../index.css';
-import Navigation from '../components/Navigation';
 import Home from '../components/Home';
 import Work from '../components/Work';
 import About from '../components/About';
@@ -14,7 +13,6 @@ import HamburgerMenu from '../components/Hamburger';
 function HomePage() {
   return (
     <div className="App">      
-      {/* <Navigation /> */}
       <HamburgerMenu />
       <Home />
       <Work />
