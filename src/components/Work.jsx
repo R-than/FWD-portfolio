@@ -61,11 +61,11 @@ const Work = () => {
            }}>
           <div className="flex flex-col md:flex-row items-center mb-6  "  >
             <div className="w-full  md:w-1/2 mr-0 md:mr-8 mb-4 md:mb-0">
-              <img src="/images/TBA.jpg" alt="Froth image" className="w-full h-full object-cover rounded-lg" />
+              <img src="/images/Froth_.png" alt="Froth image" className="w-full h-full object-cover rounded-lg" />
             </div>
             <div className="w-full md:w-1/2">
               <h3 className="text-xl md:text-5xl font-semibold mb-4">Froth</h3>
-              <p className="text-white mb-6">This is the Capstone wordpress project based on a Matcha cafe. It is currently in development.</p>
+              <p className="text-white mb-6">This is the Capstone wordpress project based on a Matcha cafe.</p>
               <Link to="/Froth" className="flex justify-center md:justify-start text-base md:text-2xl text-orange-300 py-2">View Project</Link>
               <div className="flex flex-wrap mt-2">
                 <i className="fab fa-php text-purple-500 fa-3x mr-4"></i>

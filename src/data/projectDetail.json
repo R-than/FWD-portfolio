@@ -2,11 +2,11 @@
     {
         "id": "1",
         "name": "Froth",
-        "heroimg": "FrothLogo.png",
+        "heroimg": "Froth_2.png",
         "icon":["fa-php text-purple-500","fa-gulp text-red-500","fa-html5 text-red-500","fa-git-alt text-red-500","fa-github text-red-500","fa-wordpress text-blue-500"],
         "desc": "As this being the final project of the program. I would consider this my teams biggest undertaking. I feel the most confident using Github, gulp, and wordpress overall. The program has thought me alot and being able to put it together in this Capstone is exciting.",
-        "img1":"TBA.jpg",
-        "img2":"TBA.jpg",
+        "img1":"Froth_3.png",
+        "img2":"Froth_4.png",
         "info":"One of the biggest hurdles I had to overcome was setting up the google maps API and honestly, seeing it up and running was quite fulfilling. ",
         "live": "https://matchacafe.bcitwebdeveloper.ca/"
     
